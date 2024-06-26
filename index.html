@@ -25,7 +25,7 @@
             <h1 class="font-bold text-2xl text-[#ADBBDA]">Left: <span>6</span></h1>
         </section>
     </header>
-    <main class="grid grid-cols-3">
+    <main class="grid grid-cols-1 lg:grid-cols-3">
         <!------------------------------ player section ------------------------------>
         <section class="col-span-2 mx-auto">
             <h1 class="text-center text-[#7091E6] text-2xl font-bold underline my-10">Select your player</h1>
@@ -183,7 +183,51 @@
                 </div>
             </div>
         </section>
-        <section></section>
+        <!------------------------------ Cart section ------------------------------>
+        <section>
+            <h1 class="text-center text-[#7091E6] text-2xl font-bold underline my-10">Cart Details</h1>
+            <div>
+                <div class="overflow-x-auto">
+                    <table class="table">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th class="font-extrabold">Name</th>
+                          <th class="font-extrabold">Price</th>
+                          <th class="font-extrabold">Category</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td colspan="4" class="text-center text-3xl font-bold">Total cost: <span>0</span>$</td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <td colspan="4" class="">
+                                <input
+                            type="text"
+                            placeholder="Apply Coupon"
+                            class="input input-bordered border-[#7091E6] w-full max-w-xs" /> <button class="btn hover:bg-[#3D52A0] text-[#7091E6] hover:text-white text-xl my-2">Apply</button>
+                            </td>
+                        </tr>
+                        <!-- row 4 -->
+                        <tr>
+                            <td colspan="4" class="text-center text-3xl font-bold">Grand Total: <span>0</span>$</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </section>
     </main>
 </body>
 
