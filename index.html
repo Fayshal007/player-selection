@@ -10,20 +10,181 @@
 </head>
 
 <body class="container mx-auto">
-    <header >
+    <header>
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-center mx-auto">
-                    <a class="btn hover:bg-[#3D52A0] text-[#7091E6] hover:text-white text-3xl font-bold">Select Player for Your Team</a>
+                    <a class="btn hover:bg-[#3D52A0] text-[#7091E6] hover:text-white text-3xl font-bold">Select Player
+                        for Your Team</a>
                 </div>
             </div>
         </nav>
-        <section class="flex lg:justify-around space-y-3">
+        <section class="lg:flex lg:justify-around rounded bg-[#3D52A0] p-3 mx-2">
             <h1 class="font-bold text-2xl text-[#ADBBDA]">Budget: <span>2500</span>$</h1>
             <h1 class="font-bold text-2xl text-[#ADBBDA]">Cart: <span>0</span></h1>
             <h1 class="font-bold text-2xl text-[#ADBBDA]">Left: <span>6</span></h1>
         </section>
     </header>
+    <main class="grid grid-cols-3">
+        <!------------------------------ player section ------------------------------>
+        <section class="col-span-2 mx-auto">
+            <h1 class="text-center text-[#7091E6] text-2xl font-bold underline my-10">Select your player</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-2 mx-3 gap-5">
+                <!------------------------------ player list ------------------------------>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://www.daily-sun.com/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2022%2F07%2F17%2FTamim.jpg&w=1920&q=100"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Tamim Iqbal</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Bat</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://ecdn.dhakatribune.net/contents/cache/images/640x359x1/uploads/media/2024/03/10/Shakib-Al-Hasan-4235234e3be840b8a0c3965243767cb4.jpg?jadewits_media_id=16667"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Shakib Al Hasan</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">All rounder</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2019/11/mushfiqur-rahim-1572802253.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Musfiqur</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Bat</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://backoffice.daily-bangladesh.com/media/imgAll/2022December/English/liton-1669981478-1669982253.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Liton Das</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Bat</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://images.indianexpress.com/2023/09/Shanto.jpg" alt="Shoes"
+                            class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Shanto</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Bat</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://www.dailymessenger.net/media/imgAll/2022February/en/16-2312191615.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Mustafizur</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Ball</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://crictoday.com/wp-content/uploads/2023/06/GettyImages-694070582.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Taskin Ahmed</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Ball</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://ecdn.dhakatribune.net/contents/cache/images/640x359x1/uploads/dten/2022/11/02/000-32mm4ba.jpeg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Shoriful</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Ball</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://www.india.com/wp-content/uploads/2022/09/Collage-Maker-19-Sep-2022-05.05-PM.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Rubel Hossain</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Ball</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-[#c9d8ff] w-96 shadow-xl">
+                    <figure class="px-5 pt-5 h-2/5">
+                        <img src="https://www.ehlatifee.com/wp-content/uploads/2020/06/Mashrafe-Bin-Mortaza_EHLatifee.com_.jpg"
+                            alt="Shoes" class="rounded-xl h-[100%] w-[100%]" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Name: <span id="player-name">Mashrafe</span></h2>
+                        <h2 class="card-title">Price: <span id="player-price">300</span>$</h2>
+                        <h2 class="card-title">Category: <span id="player-category">Ball</span></h2>
+                        <div class="card-actions">
+                            <button class="btn bg-[#7091E6] hover:bg-[#3D52A0] font-bold hover:text-white">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </main>
 </body>
 
 </html>
